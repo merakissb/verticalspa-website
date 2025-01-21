@@ -12,7 +12,7 @@ module.exports = {
   darkMode: "class",
   theme: {
     fontFamily: {
-      inter: ["Inter", "sans-serif"],
+      maven: ["Maven Pro", "sans-serif"],
     },
     extend: {
       colors: {

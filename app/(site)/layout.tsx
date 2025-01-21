@@ -5,9 +5,10 @@ import Header from "@/components/Header";
 import Lines from "@/components/Lines";
 import ScrollToTop from "@/components/ScrollToTop";
 import { ThemeProvider } from "next-themes";
-import { Inter } from "next/font/google";
+// import { Inter } from "next/font/google";
+import { Maven_Pro } from "next/font/google";
 import "../globals.css";
-const inter = Inter({ subsets: ["latin"] });
+const inter = Maven_Pro({ subsets: ["latin"], weight: "variable" });
 
 import ToasterContext from "../context/ToastContext";
 
