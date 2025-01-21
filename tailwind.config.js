@@ -37,6 +37,15 @@ module.exports = {
         alabaster: "#FBFBFB",
         zumthor: "#EDF5FF",
         socialicon: "#D1D8E0",
+
+        // Vertical Colors
+        darkNavi: "#05151F",
+        deepBlue: "#133450",
+        primaryOrange: "#EC6240",
+        softBeige: "#F0BCA5",
+        softBlue: "#BFD6ED",
+        lightGrey: "#CDD3D7",
+        snowGrey: "#F9F9F9"
       },
       fontSize: {
         metatitle: ["12px", "20px"],

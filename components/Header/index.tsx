@@ -110,12 +110,12 @@ const Header = () => {
                     <>
                       <button
                         onClick={() => setDropdownToggler(!dropdownToggler)}
-                        className="flex cursor-pointer items-center justify-between gap-3 hover:text-primary"
+                        className="flex cursor-pointer items-center justify-between gap-3 hover:text-primaryOrange"
                       >
                         {menuItem.title}
                         <span>
                           <svg
-                            className="h-3 w-3 cursor-pointer fill-waterloo group-hover:fill-primary"
+                            className="h-3 w-3 cursor-pointer fill-waterloo group-hover:fill-primaryOrange"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512"
                           >
@@ -128,7 +128,7 @@ const Header = () => {
                         className={`dropdown ${dropdownToggler ? "flex" : ""}`}
                       >
                         {menuItem.submenu.map((item, key) => (
-                          <li key={key} className="hover:text-primary">
+                          <li key={key} className="hover:text-primaryOrange">
                             <Link href={item.path || "#"}>{item.title}</Link>
                           </li>
                         ))}
@@ -137,11 +137,11 @@ const Header = () => {
                   ) : (
                     <Link
                       href={`${menuItem.path}`}
-                      className={
+                      className={`${
                         pathUrl === menuItem.path
-                          ? "text-primary hover:text-primary"
-                          : "hover:text-primary"
-                      }
+                          ? "text-primaryOrange hover:text-deepBlue"
+                          : "hover:text-primaryOrange"
+                      } inline-block pb-1 border-b-2 border-transparent hover:border-primaryOrange transition duration-500 ease-in-out`}
                     >
                       {menuItem.title}
                     </Link>
@@ -151,7 +151,7 @@ const Header = () => {
             </ul>
           </nav>
 
-          <div className="mt-7 flex items-center gap-6 xl:mt-0">
+          {/* <div className="mt-7 flex items-center gap-6 xl:mt-0">
             <ThemeToggler />
 
             <Link
@@ -167,7 +167,7 @@ const Header = () => {
             >
               Get Pro 🔥
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </header>
