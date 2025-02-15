@@ -10,7 +10,8 @@ export async function POST(req) {
   try {
     const emailData = await resend.emails.send({
       from: "Contacto Sitio Web <contacto@verticalspa.cl>",
-      to: [email],
+      to: ['contacto@verticalspa.cl'],
+      cc: [email],
       subject: subject || "New Contact Form Submission",
       react: (
         <EmailTemplate
